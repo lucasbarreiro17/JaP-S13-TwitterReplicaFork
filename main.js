@@ -12,8 +12,8 @@ fetch(API_URL)
 function agregarTweets(array){
     feed.innerHTML="";
     console.log(array);
+    let x=0;
     for (const tweet of array) {
-        let x=0;
         feed.innerHTML+=` <div class="profile-pic"><img src="https://xsgames.co/randomusers/assets/avatars/male/${x}.jpg" /></div>
         <div class="content">
           <div class="names">
