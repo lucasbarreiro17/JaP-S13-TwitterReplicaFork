@@ -13,7 +13,8 @@ function agregarTweets(array){
     feed.innerHTML="";
     console.log(array);
     for (const tweet of array) {
-        feed.innerHTML+=` <div class="profile-pic"><img src="https://picsum.photos/10" /></div>
+        let x=0;
+        feed.innerHTML+=` <div class="profile-pic"><img src="https://xsgames.co/randomusers/assets/avatars/male/${x}.jpg" /></div>
         <div class="content">
           <div class="names">
             <p class="full-name">${tweet.name}</p>
@@ -29,5 +30,6 @@ function agregarTweets(array){
           <i class="fa fa-heart" aria-hidden="true"></i>
           <i class="fa fa-retweet" aria-hidden="true"></i>
         </div>`
+        x++;
     }
 }
